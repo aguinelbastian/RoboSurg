@@ -7,8 +7,8 @@ from app.api.routes import agendamento, disponibilidade, cirurgias
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="🤖 RoboSurg API",
-    description="Sistema de Gestão de Cirurgia Robótica",
+    title="🤖 RoboSurg — Sistema de Gestão de Cirurgia Robótica Hosp SOS Cárdio",
+    description="Sistema de Gestão de Cirurgia Robótica Hosp SOS Cárdio",
     version="0.1.0"
 )
 
