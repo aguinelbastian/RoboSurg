@@ -54,7 +54,7 @@ def fetch_patient_data(patient_id: str) -> Optional[Dict[str, Any]]:
         # Loga o erro técnico, mas não expõe o ID do paciente ou dados da query no log de erro
         logger.error("Erro na transação com o banco de dados de pacientes.")
         raise
-
+```
 ## 3. PADRÃO GITHUB: ESTRUTURA DE REPOSITÓRIO
 Todo repositório deve seguir esta estrutura de pastas para separação de responsabilidades:
 
