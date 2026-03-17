@@ -73,6 +73,7 @@ Todo repositório deve seguir esta estrutura de pastas para separação de respo
 ## 4. PADRÃO GITHUB ACTIONS: CI/CD PIPELINE
 Todo repositório deve conter um workflow de CI/CD para garantir que código quebrado não chegue à produção.
 O arquivo .github/workflows/ci_cd_pipeline.yml padrão é:
+```
 name: UroOnco Python CI/CD
 
 on:
@@ -110,7 +111,7 @@ jobs:
         SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.TEST_SUPABASE_KEY }}
       run: |
         pytest tests/
-
+```
 ## 5. REGRAS DE OURO (INVIOLÁVEIS)
 - Zero Hardcoding: Nenhuma senha, token, chave de API ou URL de banco de dados deve existir no código-fonte.
 - Logs Sanitizados: É expressamente proibido logar variáveis que contenham PHI (Protected Health Information) como nomes, CPFs ou diagnósticos.
