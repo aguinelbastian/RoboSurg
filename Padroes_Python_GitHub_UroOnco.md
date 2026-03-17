@@ -57,7 +57,7 @@ def fetch_patient_data(patient_id: str) -> Optional[Dict[str, Any]]:
 ```
 ## 3. PADRÃO GITHUB: ESTRUTURA DE REPOSITÓRIO
 Todo repositório deve seguir esta estrutura de pastas para separação de responsabilidades:
-
+```
 ├── .github/
 │   └── workflows/
 │       └── ci_cd_pipeline.yml
@@ -69,7 +69,7 @@ Todo repositório deve seguir esta estrutura de pastas para separação de respo
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 ## 4. PADRÃO GITHUB ACTIONS: CI/CD PIPELINE
 Todo repositório deve conter um workflow de CI/CD para garantir que código quebrado não chegue à produção.
 O arquivo .github/workflows/ci_cd_pipeline.yml padrão é:
